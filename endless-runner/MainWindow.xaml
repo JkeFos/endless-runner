@@ -1,12 +1,29 @@
 ﻿<Window x:Class="endless_runner.MainWindow"
+        
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:endless_runner"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        DataContext="{Binding RelativeSource={RelativeSource Self}}"
+        
+        Title="Endless Runner"
+        Height="450"
+        Width="800">
 
-    </Grid>
+    <Canvas Name="MainCanvas" Focusable="True" Background="LightBlue" KeyDown="MainCanvas_KeyDown">
+
+        <Rectangle Name="Background1" Height="400" Width="1262" Fill="Orange"/>
+        <Rectangle Name="Background2" Height="400" Width="1262" Fill="LightGreen" Canvas.Left="1262"/>
+
+        <Rectangle Name="Ground" Height="32" Width="800" Fill="Black" Canvas.Top="387" Canvas.Left="0"/>
+
+        <Rectangle Name="Player" Height="99" Width="67" Fill="Brown" Canvas.Top="151" Canvas.Left="110"/>
+
+        <Rectangle Name="Obstacle" Height="178" Width="50" Fill="Red" Canvas.Top="320" Canvas.Left="721"/>
+
+        <Label Name="ScoreText" FontSize="22" FontWeight="Bold" Content="Score 0"/>
+
+    </Canvas>
+
 </Window>
