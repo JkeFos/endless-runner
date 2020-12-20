@@ -2,9 +2,16 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>net5.0-windows</TargetFramework>
     <RootNamespace>endless_runner</RootNamespace>
     <UseWPF>true</UseWPF>
+    <StartupObject>endless_runner.App</StartupObject>
+    <Description>Endless runner game.</Description>
+    <PackageProjectUrl>https://github.com/JkeFos/endless-runner</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/JkeFos/endless-runner</RepositoryUrl>
+    <RepositoryType>Open source.</RepositoryType>
+    <PackageTags>Endless runner, game.</PackageTags>
+    <NeutralLanguage>en-AU</NeutralLanguage>
   </PropertyGroup>
 
 </Project>
