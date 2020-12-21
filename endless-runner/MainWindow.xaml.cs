@@ -44,8 +44,9 @@ namespace endless_runner
         private readonly ImageBrush backgroundSprite = new ImageBrush();
         private readonly ImageBrush obstacleSprite = new ImageBrush();
 
-        // Array to change the obsacles position on the screen.
-        private readonly int[] obstaclePosition = { 320, 310, 300, 305, 315 };
+        // Array to change the obstacle position on screen.
+        // Random element is selected for the height after the first one.
+        private readonly int[] obstaclePosition = { 275, 280, 285, 290, 290 };
 
         // Score, default is 0.
         private int score;
@@ -80,7 +81,7 @@ namespace endless_runner
         /// <param name="e"></param>
         private void MainCanvas_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.Key == Key.Space && !jumping && Canvas.GetTop(Player) > 260)
+            if (e.Key == Key.Space && !jumping && Canvas.GetTop(Player) > 250)
             {
                 jumping = true;
                 force = 15;
@@ -96,24 +97,32 @@ namespace endless_runner
 
         private void StartGame()
         {
+            // Background location.
             Canvas.SetLeft(Background1, 0);
             Canvas.SetLeft(Background2, 1262);
 
+            // Player starting x, y coordinate.
             Canvas.SetLeft(Player, 110);
             Canvas.SetTop(Player, 140);
 
+            // Obstacle starting x, y coordinate.
             Canvas.SetLeft(Obstacle, 950);
-            Canvas.SetTop(Obstacle, 310);
+            Canvas.SetTop(Obstacle, 280);
+
+            // Set sprite for player.
             RunSprite(1);
 
+            // Set obstacle sprite.
             obstacleSprite.ImageSource = new BitmapImage(new Uri(Paths.ObstacleImage, UriKind.Relative));
             Obstacle.Fill = obstacleSprite;
 
+            // Starting values.
             jumping = false;
             gameover = false;
             score = 0;
             ScoreText.Content = "Score: " + score;
 
+            // Start the game timer.
             gameTimer.Start();
         }
 
@@ -254,11 +263,11 @@ namespace endless_runner
                 score += 1;
             }
 
-            // If gameover, draw a black border around the obstacle. Draw a red border around
+            // If gameover, draw a yellow border around the obstacle. Draw a red border around
             // the player and show a message.
             if (gameover)
             {
-                Obstacle.Stroke = Brushes.Black;
+                Obstacle.Stroke = Brushes.Yellow;
                 Obstacle.StrokeThickness = 1;
 
                 Player.Stroke = Brushes.Red;

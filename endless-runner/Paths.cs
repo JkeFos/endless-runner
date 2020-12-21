@@ -3,7 +3,7 @@
     class Paths
     {
         public static string ImageFolder { get; } = @"Images\";
-        public static string BackgroundImage { get; } = $"{ImageFolder}background.gif";
+        public static string BackgroundImage { get; } = $"{ImageFolder}background.png";
         public static string ObstacleImage { get; } = $"{ImageFolder}obstacle.png";
         public static string RunnerImage01 { get; } = $"{ImageFolder}runner_01.gif";
         public static string RunnerImage02 { get; } = $"{ImageFolder}runner_02.gif";
