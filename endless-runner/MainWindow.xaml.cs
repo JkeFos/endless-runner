@@ -190,7 +190,7 @@ namespace endless_runner
                 speed = 0;
                 Canvas.SetTop(Player, Canvas.GetTop(Ground) - Player.Height);
                 jumping = false;
-                spriteInt += 5;
+                spriteInt += 1;
 
                 // Reset the sprite if it goes above 8.
                 if (spriteInt > 8)
