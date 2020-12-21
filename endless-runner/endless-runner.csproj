@@ -18,28 +18,28 @@
     <None Update="Images\background.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="Images\newRunner_01.gif">
+    <None Update="Images\runner_01.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="Images\newRunner_02.gif">
+    <None Update="Images\runner_02.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="Images\newRunner_03.gif">
+    <None Update="Images\runner_03.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="Images\newRunner_04.gif">
+    <None Update="Images\runner_04.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="Images\newRunner_05.gif">
+    <None Update="Images\runner_05.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="Images\newRunner_06.gif">
+    <None Update="Images\runner_06.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="Images\newRunner_07.gif">
+    <None Update="Images\runner_07.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="Images\newRunner_08.gif">
+    <None Update="Images\runner_08.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Update="Images\obstacle.png">

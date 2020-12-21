@@ -63,7 +63,7 @@ namespace endless_runner
 
             // Set back sprite image.
             // 'pack://' - Current app package.
-            backgroundSprite.ImageSource = new BitmapImage(new Uri("Images/background.gif", UriKind.Relative));
+            backgroundSprite.ImageSource = new BitmapImage(new Uri(Paths.BackgroundImage, UriKind.Relative));
             Background1.Fill = backgroundSprite;
             Background2.Fill = backgroundSprite;
 
@@ -85,7 +85,7 @@ namespace endless_runner
                 jumping = true;
                 force = 15;
                 speed = -12;
-                playerSprite.ImageSource = new BitmapImage(new Uri("Images/newRunner_02.gif", UriKind.Relative));
+                playerSprite.ImageSource = new BitmapImage(new Uri(Paths.RunnerImage02, UriKind.Relative));
             }
 
             if (e.Key == Key.Enter && gameover)
@@ -106,7 +106,7 @@ namespace endless_runner
             Canvas.SetTop(Obstacle, 310);
             RunSprite(1);
 
-            obstacleSprite.ImageSource = new BitmapImage(new Uri("Images/obstacle.png", UriKind.Relative));
+            obstacleSprite.ImageSource = new BitmapImage(new Uri(Paths.ObstacleImage, UriKind.Relative));
             Obstacle.Fill = obstacleSprite;
 
             jumping = false;
@@ -126,35 +126,35 @@ namespace endless_runner
             switch (i)
             {
                 case 1:
-                    playerSprite.ImageSource = new BitmapImage(new Uri("Images/newRunner_01.gif", UriKind.Relative));
+                    playerSprite.ImageSource = new BitmapImage(new Uri(Paths.RunnerImage01, UriKind.Relative));
                     break;
 
                 case 2:
-                    playerSprite.ImageSource = new BitmapImage(new Uri("Images/newRunner_02.gif", UriKind.Relative));
+                    playerSprite.ImageSource = new BitmapImage(new Uri(Paths.RunnerImage02, UriKind.Relative));
                     break;
 
                 case 3:
-                    playerSprite.ImageSource = new BitmapImage(new Uri("Images/newRunner_03.gif", UriKind.Relative));
+                    playerSprite.ImageSource = new BitmapImage(new Uri(Paths.RunnerImage03, UriKind.Relative));
                     break;
 
                 case 4:
-                    playerSprite.ImageSource = new BitmapImage(new Uri("Images/newRunner_04.gif", UriKind.Relative));
+                    playerSprite.ImageSource = new BitmapImage(new Uri(Paths.RunnerImage04, UriKind.Relative));
                     break;
 
                 case 5:
-                    playerSprite.ImageSource = new BitmapImage(new Uri("Images/newRunner_05.gif", UriKind.Relative));
+                    playerSprite.ImageSource = new BitmapImage(new Uri(Paths.RunnerImage05, UriKind.Relative));
                     break;
 
                 case 6:
-                    playerSprite.ImageSource = new BitmapImage(new Uri("Images/newRunner_05.gif", UriKind.Relative));
+                    playerSprite.ImageSource = new BitmapImage(new Uri(Paths.RunnerImage06, UriKind.Relative));
                     break;
 
                 case 7:
-                    playerSprite.ImageSource = new BitmapImage(new Uri("Images/newRunner_07.gif", UriKind.Relative));
+                    playerSprite.ImageSource = new BitmapImage(new Uri(Paths.RunnerImage07, UriKind.Relative));
                     break;
 
                 case 8:
-                    playerSprite.ImageSource = new BitmapImage(new Uri("Images/newRunner_08.gif", UriKind.Relative));
+                    playerSprite.ImageSource = new BitmapImage(new Uri(Paths.RunnerImage08, UriKind.Relative));
                     break;
 
                 default:
