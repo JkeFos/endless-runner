@@ -18,7 +18,7 @@
 
         <Rectangle Name="Ground" Height="32" Width="800" Fill="Transparent" Canvas.Top="357" Canvas.Left="0"/>
 
-        <Rectangle Name="Player" Height="99" Width="67" Fill="Brown" Canvas.Top="151" Canvas.Left="110"/>
+        <Rectangle Name="Player" Height="99" Width="67" Fill="Brown" Canvas.Top="140" Canvas.Left="110"/>
 
         <Rectangle Name="Obstacle" Height="178" Width="50" Fill="Red" Canvas.Top="280" Canvas.Left="721"/>
 
