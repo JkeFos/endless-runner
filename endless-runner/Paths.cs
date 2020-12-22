@@ -1,6 +1,6 @@
 ﻿namespace endless_runner
 {
-    class Paths
+    internal class Paths
     {
         public static string ImageFolder { get; } = @"Images\";
         public static string BackgroundImage { get; } = $"{ImageFolder}background.png";
