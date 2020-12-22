@@ -16,36 +16,49 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Update="Images\background.png">
+    <None Remove="Images\background.png" />
+    <None Remove="Images\obstacle.png" />
+    <None Remove="Images\runner_01.gif" />
+    <None Remove="Images\runner_02.gif" />
+    <None Remove="Images\runner_03.gif" />
+    <None Remove="Images\runner_04.gif" />
+    <None Remove="Images\runner_05.gif" />
+    <None Remove="Images\runner_06.gif" />
+    <None Remove="Images\runner_07.gif" />
+    <None Remove="Images\runner_08.gif" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Images\background.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="Images\obstacle.png">
+    </Content>
+    <Content Include="Images\obstacle.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="Images\runner_01.gif">
+    </Content>
+    <Content Include="Images\runner_01.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="Images\runner_02.gif">
+    </Content>
+    <Content Include="Images\runner_02.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="Images\runner_03.gif">
+    </Content>
+    <Content Include="Images\runner_03.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="Images\runner_04.gif">
+    </Content>
+    <Content Include="Images\runner_04.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="Images\runner_05.gif">
+    </Content>
+    <Content Include="Images\runner_05.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="Images\runner_06.gif">
+    </Content>
+    <Content Include="Images\runner_06.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="Images\runner_07.gif">
+    </Content>
+    <Content Include="Images\runner_07.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="Images\runner_08.gif">
+    </Content>
+    <Content Include="Images\runner_08.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
+    </Content>
   </ItemGroup>
 
 </Project>
