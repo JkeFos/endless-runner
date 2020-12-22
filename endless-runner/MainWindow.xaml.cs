@@ -39,13 +39,13 @@ namespace endless_runner
         private int obstacleMovement;
         private int score;
         private int speed;
-        private readonly int backgroundWidth = 1262;
+        private readonly int backgroundWidth = 1250;
         private readonly int obstacleMaxHeight = 290;
         private readonly int obstacleMinHeight = 275;
         private readonly int obstacleStartX = 280;
         private readonly int obstacleStartY = 950;
-        private readonly int playerStartX = 110;
-        private readonly int playerStartY = 140;
+        private readonly int playerStartX = 100;
+        private readonly int playerStartY = 150;
 
         public MainWindow()
         {

@@ -13,16 +13,16 @@
 
     <Canvas Name="MainCanvas" Focusable="True" Background="LightBlue" KeyDown="MainCanvas_KeyDown">
 
-        <Rectangle Name="Background1" Height="400" Width="1262" Fill="Orange"/>
-        <Rectangle Name="Background2" Height="400" Width="1262" Fill="LightGreen" Canvas.Left="1262"/>
+        <Rectangle Name="Background1" Height="400" Width="1250" Fill="Orange"/>
+        <Rectangle Name="Background2" Height="400" Width="1250" Fill="LightGreen" Canvas.Left="1250"/>
 
-        <Rectangle Name="Ground" Height="32" Width="800" Fill="Transparent" Canvas.Top="357" Canvas.Left="0"/>
+        <Rectangle Name="Ground" Height="30" Width="800" Fill="Transparent" Canvas.Top="360" Canvas.Left="0"/>
 
-        <Rectangle Name="Player" Height="99" Width="67" Fill="Brown" Canvas.Top="140" Canvas.Left="110"/>
+        <Rectangle Name="Player" Height="100" Width="67" Fill="Brown" Canvas.Top="150" Canvas.Left="100"/>
 
-        <Rectangle Name="Obstacle" Height="178" Width="50" Fill="Red" Canvas.Top="280" Canvas.Left="721"/>
+        <Rectangle Name="Obstacle" Height="175" Width="50" Fill="Red" Canvas.Top="280" Canvas.Left="725"/>
 
-        <Label Name="ScoreText" FontSize="22" FontWeight="Bold" Content="Score 0"/>
+        <Label Name="ScoreText" FontSize="22" FontWeight="Bold" Content="Score"/>
 
     </Canvas>
 
