@@ -12,6 +12,7 @@
     <RepositoryType>Open source.</RepositoryType>
     <PackageTags>Endless runner, game.</PackageTags>
     <NeutralLanguage>en-AU</NeutralLanguage>
+    <ApplicationIcon>runner_07.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
