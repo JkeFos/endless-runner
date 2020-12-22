@@ -51,6 +51,14 @@ namespace endless_runner
         // Score, default is 0.
         private int score;
 
+        // Speed at which the game moves. After every jump, speed increases.
+        // Default speeds are 3, 12.
+        private int backgroundSpeed = 3;
+        private int playerSpeed = 12;
+
+        // Gap between the last and next obstacle.
+        private int nextObstacle = 950;
+
         public MainWindow()
         {
             InitializeComponent();
@@ -91,6 +99,10 @@ namespace endless_runner
 
             if (e.Key == Key.Enter && gameover)
             {
+                backgroundSpeed = 3;
+                playerSpeed = 12;
+                nextObstacle = 950;
+
                 StartGame();
             }
         }
@@ -179,11 +191,11 @@ namespace endless_runner
             Canvas.SetTop(Player, Canvas.GetTop(Player) + speed);
 
             // Move the background 3 pixels to the left with each tick.
-            Canvas.SetLeft(Background1, Canvas.GetLeft(Background1) - 3);
-            Canvas.SetLeft(Background2, Canvas.GetLeft(Background2) - 3);
+            Canvas.SetLeft(Background1, Canvas.GetLeft(Background1) - backgroundSpeed);
+            Canvas.SetLeft(Background2, Canvas.GetLeft(Background2) - backgroundSpeed);
 
             // Move obstacle rectangle to the left 12 pixels per tick.
-            Canvas.SetLeft(Obstacle, Canvas.GetLeft(Obstacle) - 12);
+            Canvas.SetLeft(Obstacle, Canvas.GetLeft(Obstacle) - playerSpeed);
 
             // Link the score text label to the score integer.
             ScoreText.Content = "Score: " + score;
@@ -258,9 +270,12 @@ namespace endless_runner
             // around the screen. Also adds 1 to the score tally.
             if (Canvas.GetLeft(Obstacle) < -50)
             {
-                Canvas.SetLeft(Obstacle, 950);
+                Canvas.SetLeft(Obstacle, nextObstacle + rand.Next(1, 100));
                 Canvas.SetTop(Obstacle, obstaclePosition[rand.Next(0, obstaclePosition.Length)]);
-                score += 1;
+
+                score++;
+                backgroundSpeed++;
+                playerSpeed++;
             }
 
             // If gameover, draw a yellow border around the obstacle. Draw a red border around
