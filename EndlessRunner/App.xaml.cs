@@ -1,6 +1,6 @@
 ﻿using System.Windows;
 
-namespace endless_runner
+namespace EndlessRunner
 {
     /// <summary>
     /// Interaction logic for App.xaml

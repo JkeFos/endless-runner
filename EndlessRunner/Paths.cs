@@ -1,4 +1,4 @@
-﻿namespace endless_runner
+﻿namespace EndlessRunner
 {
     internal class Paths
     {

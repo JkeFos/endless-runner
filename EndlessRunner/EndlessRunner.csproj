@@ -3,9 +3,9 @@
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net5.0-windows</TargetFramework>
-    <RootNamespace>endless_runner</RootNamespace>
+    <RootNamespace>EndlessRunner</RootNamespace>
     <UseWPF>true</UseWPF>
-    <StartupObject>endless_runner.App</StartupObject>
+    <StartupObject>EndlessRunner.App</StartupObject>
     <Description>Endless runner game.</Description>
     <PackageProjectUrl>https://github.com/JkeFos/endless-runner</PackageProjectUrl>
     <RepositoryUrl>https://github.com/JkeFos/endless-runner</RepositoryUrl>
