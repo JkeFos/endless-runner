@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RunSettings>
+
+  <!-- Make sure to select file by Test -> Configure Run Settings -> Selection Solution Wide runsettings File -->
+  <RunConfiguration>
+    <ResultsDirectory>test\results</ResultsDirectory>
+  </RunConfiguration>
+
+</RunSettings>

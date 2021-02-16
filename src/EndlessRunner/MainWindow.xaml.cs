@@ -47,6 +47,9 @@ namespace EndlessRunner
         private readonly int playerStartX = 100;
         private readonly int playerStartY = 150;
 
+        /// <summary>
+        /// Starting point of the program.
+        /// </summary>
         public MainWindow()
         {
             InitializeComponent();
@@ -59,7 +62,7 @@ namespace EndlessRunner
             gameTimer.Interval = TimeSpan.FromMilliseconds(20);
 
             // Set background sprite image.
-            backgroundSprite.ImageSource = new BitmapImage(new Uri(Paths.BackgroundImage, UriKind.Relative));
+            backgroundSprite.ImageSource = new BitmapImage(new Uri(Path.BackgroundImage, UriKind.Relative));
             Background1.Fill = backgroundSprite;
             Background2.Fill = backgroundSprite;
 
@@ -81,7 +84,7 @@ namespace EndlessRunner
                 jumping = true;
                 force = 15;
                 speed = -12;
-                playerSprite.ImageSource = new BitmapImage(new Uri(Paths.RunnerImage02, UriKind.Relative));
+                playerSprite.ImageSource = new BitmapImage(new Uri(Path.RunnerImage02, UriKind.Relative));
             }
 
             if (e.Key == Key.Enter && gameover)
@@ -115,7 +118,7 @@ namespace EndlessRunner
             RunSprite(1);
 
             // Set obstacle sprite.
-            obstacleSprite.ImageSource = new BitmapImage(new Uri(Paths.ObstacleImage, UriKind.Relative));
+            obstacleSprite.ImageSource = new BitmapImage(new Uri(Path.ObstacleImage, UriKind.Relative));
             Obstacle.Fill = obstacleSprite;
 
             // Starting values.
@@ -142,35 +145,35 @@ namespace EndlessRunner
             switch (i)
             {
                 case 1:
-                    playerSprite.ImageSource = new BitmapImage(new Uri(Paths.RunnerImage01, UriKind.Relative));
+                    playerSprite.ImageSource = new BitmapImage(new Uri(Path.RunnerImage01, UriKind.Relative));
                     break;
 
                 case 2:
-                    playerSprite.ImageSource = new BitmapImage(new Uri(Paths.RunnerImage02, UriKind.Relative));
+                    playerSprite.ImageSource = new BitmapImage(new Uri(Path.RunnerImage02, UriKind.Relative));
                     break;
 
                 case 3:
-                    playerSprite.ImageSource = new BitmapImage(new Uri(Paths.RunnerImage03, UriKind.Relative));
+                    playerSprite.ImageSource = new BitmapImage(new Uri(Path.RunnerImage03, UriKind.Relative));
                     break;
 
                 case 4:
-                    playerSprite.ImageSource = new BitmapImage(new Uri(Paths.RunnerImage04, UriKind.Relative));
+                    playerSprite.ImageSource = new BitmapImage(new Uri(Path.RunnerImage04, UriKind.Relative));
                     break;
 
                 case 5:
-                    playerSprite.ImageSource = new BitmapImage(new Uri(Paths.RunnerImage05, UriKind.Relative));
+                    playerSprite.ImageSource = new BitmapImage(new Uri(Path.RunnerImage05, UriKind.Relative));
                     break;
 
                 case 6:
-                    playerSprite.ImageSource = new BitmapImage(new Uri(Paths.RunnerImage06, UriKind.Relative));
+                    playerSprite.ImageSource = new BitmapImage(new Uri(Path.RunnerImage06, UriKind.Relative));
                     break;
 
                 case 7:
-                    playerSprite.ImageSource = new BitmapImage(new Uri(Paths.RunnerImage07, UriKind.Relative));
+                    playerSprite.ImageSource = new BitmapImage(new Uri(Path.RunnerImage07, UriKind.Relative));
                     break;
 
                 case 8:
-                    playerSprite.ImageSource = new BitmapImage(new Uri(Paths.RunnerImage08, UriKind.Relative));
+                    playerSprite.ImageSource = new BitmapImage(new Uri(Path.RunnerImage08, UriKind.Relative));
                     break;
 
                 default:
@@ -185,7 +188,7 @@ namespace EndlessRunner
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void GameEngine(object sender, EventArgs e)
+        private void GameEngine(object? sender, EventArgs e)
         {
             // Move the player character down using the speed integer.
             Canvas.SetTop(Player, Canvas.GetTop(Player) + speed);
