@@ -249,9 +249,9 @@ namespace EndlessRunner
                 jumping = false;
             }
 
-            /*********************
-             * Parallax scrolling.
-             *********************/
+            /* * * * * * * * * * * *
+             * Parallax scrolling. *
+             * * * * * * * * * * * */
 
             // If the first background goes below a certain point, position 
             // the first background behind the second background.
