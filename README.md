@@ -1,4 +1,7 @@
 # Endless Runner
+![Windows](https://github.com/JkeFos/endless-runner/workflows/Windows/badge.svg)
+
+## Description
 Endless runner game using WPF with C#.
 
 ## Installation
